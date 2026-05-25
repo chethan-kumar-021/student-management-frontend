@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Student Management System</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Student Management System</h1>
+
+        <!-- STUDENT FORM -->
+
+        <div class="form-container">
+
+            <h2>Add Student</h2>
+
+            <form id="studentForm">
+
+                <input
+                    type="text"
+                    id="student_name"
+                    placeholder="Student Name"
+                    required
+                >
+
+                <input
+                    type="text"
+                    id="city_name"
+                    placeholder="City Name"
+                    required
+                >
+
+                <input
+                    type="date"
+                    id="dob"
+                    required
+                >
+
+                <input
+                    type="number"
+                    id="age"
+                    placeholder="Age"
+                    required
+                >
+
+                <input
+                    type="email"
+                    id="gmail"
+                    placeholder="Gmail ID"
+                    required
+                >
+
+                <select id="branch" required>
+
+                    <option value="">
+                        Select Branch
+                    </option>
+
+                    <option value="CSE">
+                        CSE
+                    </option>
+
+                    <option value="ECE">
+                        ECE
+                    </option>
+
+                    <option value="IT">
+                        IT
+                    </option>
+
+                    <option value="MECH">
+                        MECH
+                    </option>
+
+                    <option value="EEE">
+                        EEE
+                    </option>
+
+                    <option value="CIVIL">
+                        CIVIL
+                    </option>
+
+                </select>
+
+                <button type="submit">
+                    Add Student
+                </button>
+
+            </form>
+
+        </div>
+
+        <!-- STUDENT TABLE -->
+
+        <div class="table-container">
+
+            <h2>Student List</h2>
+
+            <table>
+
+                <thead>
+
+                    <tr>
+
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>City</th>
+                        <th>DOB</th>
+                        <th>Age</th>
+                        <th>Gmail</th>
+                        <th>Branch</th>
+                        <th>Actions</th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody id="studentTableBody">
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
